@@ -2,9 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <script src="https://kit.fontawesome.com/e50b3ff724.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="navbar" class="width-div">
+    <h1><span class="span-color">D</span>HRUV</h1>
+    <nav>
+        <!--            <i class="fa-solid fa-bars fa-xl"></i>-->
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</div>
+<div id="main-page" class="width-div">
+    <div>
+        <p id="sub-title">Web Developer</p>
+        <h1 id="title">Hi,I'm <span class="span-color">Dhruv</span> Singh Negi <br>From Delhi,India</h1>
+        <a href="images/Resume_removed.pdf" download="Dhruv CV"><button type="button" class="CV button" onclick="">Download CV</button></a>
+        <button type="button" class="Contact-Me button">Contact Me</button>
+    </div>
+    <div>
+        <img id="main-photo" src="images/main1.jpg" alt="profile_photo">
+    </div>
+</div>
+
+<!--about-->
+<div id="about" class="width-div">
+    <div class="about-info">
+        <h1 class="about-me-title">About Me</h1>
+    </div>
+    <div>
+        <p class="about-me-p">Hi,My name is Dhruv Singh Negi. I’ve been studying computer science for two years, creating websites, doing DSA problems and learning new skills. In order to kick-start my career, I am looking for a job of a web developer. Besides that I am a normal guy who enjoys cycling and spending time with friends. I am ambitious and hard-working and believe you’ll give me an opportunity to prove my words.</p>
+    </div>
+    <div class="about-tabs">
+        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+        <p class="tab-links" onclick="openTab('education')">Education</p>
+        <p class="tab-links" onclick="openTab('interests')">Interests</p>
+    </div>
+    <div class="tab-content active-tab" id="skills">
+        <ul class="tab-content-ul">
+            <li><span>Programming</span> <br>Java, JavaScript, Python</li>
+            <li><span>Web & Frameworks</span> <br> HTML5, CSS3, ReactJS</li>
+            <li><span>Tech</span> <br>Git, Firebase, Heroku, VS Code, IntelliJ IDEA, MS Office</li>
+            <li><span>Language</span> <br>English, Hindi</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="education">
+        <ul class="tab-content-ul">
+            <li><span>Noida Institute of Engineering & Technology <br>Greater Noida,UP,India <br>[2021-2025]</span> <br>Bachelor of Technology in Computer Science</li>
+            <li><span>Summer Fields School <br>Kailash Colony, New Delhi, India<br> [2020-2021]</span> <br> 12th, CBSE; Percentage: 91.4</li>
+            <li><span>Summer Fields School <br>[2018-2019]</span> <br>10th, CBSE; Percentage: 90.4</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="interests">
+        <ul class="tab-content-ul">
+            <li>Cycling</li>
+            <li>Watching tech reviews</li>
+        </ul>
+    </div>
+</div>
+
+<!--projects-->
+
+<div id="projects" class="width-div">
+    <h1 class="about-me-title">My Projects</h1>
+    <div class="project-cards">
+        <div class="project">
+            <img src="images/project1.png" alt="project1">
+            <div class="layer">
+                <h3>Cloudnotes</h3>
+                <p>Lets user sign-up and log-in to keep their notes on the internet securely.</p>
+                <a href="https://cloudnotes-1701.web.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/project2.png" alt="project2">
+            <div class="layer">
+                <h3>News-Bulletin</h3>
+                <p>Website which shows news of different countries and categories.</p>
+                <a href="news-bulletin-17.web.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/project3.png" alt="project3">
+            <div class="layer">
+                <h3>PostClient</h3>
+                <p>PostMan clone which lets user send GET and POST requests.</p>
+                <a href="https://cloudnotes-1701.web.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--contact-->
+
+<div id="contact" class="width-div">
+    <div class="contact-left">
+        <h1 class="about-me-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>negidhruv1701@gmal.com</p>
+        <p><i class="fa-solid fa-phone"></i>+91 9311037550</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dhruv-singh-negi-041a68201/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Dhruv1704" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/dhruv_negi7" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="images/Resume_removed.pdf" download="Dhruv CV"><button type="button" class="Contact-Me" id="CV" onclick="">Download CV</button></a>
+    </div>
+    <div class="contact-right">
+        <form>
+            <input type="text" name="Name" placeholder="Please enter your name" required>
+            <input type="email" name="Email" placeholder="Please enter your email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="Contact-Me" id="form-submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <p>Made by Dhruv Singh Negi</p>
+    <a href="" target="_blank">Website source code</a>
+</div>
+
+<script src="script.js" type="application/javascript" rel="script"></script>
 </body>
 </html>
