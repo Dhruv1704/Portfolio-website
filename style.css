@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -28,6 +32,11 @@ nav>ul>li{
     user-select: none;
     font-size: 1.2rem;
     position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 nav>ul>li::after{
@@ -384,5 +393,11 @@ nav .fa-solid{
     }
     #about, #projects, #navbar,#contact{
         padding: 0 1.5em;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 92%;
     }
 }

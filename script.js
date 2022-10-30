@@ -18,3 +18,5 @@ function openMenu(){
 function closeMenu(){
     document.getElementById('menu').style.right='-200px'
 }
+
+
