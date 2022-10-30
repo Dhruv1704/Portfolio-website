@@ -16,5 +16,5 @@ function openMenu(){
     document.getElementById('menu').style.right='0'
 }
 function closeMenu(){
-    document.getElementById('menu').style.right='-200px'
+    document.getElementById('menu').style.right='-290px'
 }
