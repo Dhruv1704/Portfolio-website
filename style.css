@@ -336,6 +336,12 @@ nav .fa-solid{
     display: none;
 }
 
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 600px){
     #main-photo{
         position: absolute;
