@@ -403,6 +403,9 @@ nav .fa-solid{
     #about, #projects, #navbar,#contact{
         padding: 0 1.5em;
     }
+    #about{
+        margin-top: 2em;
+    }
     .contact-left{
         flex-basis: 100%;
     }
