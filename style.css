@@ -245,14 +245,13 @@ textarea{
     align-items: center;
     padding-top: 5em;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .contact-left{
     flex-basis: 35%;
 }
 .contact-right{
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 .contact-left p{
@@ -383,7 +382,7 @@ nav .fa-solid{
         top:25px;
         left:25px;
     }
-    #about, #projects, #navbar {
-        padding: 0 1em;
+    #about, #projects, #navbar,#contact{
+        padding: 0 1.5em;
     }
 }
