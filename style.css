@@ -8,7 +8,7 @@ body{
 }
 
 .span-color{
-    color: red;
+    color: #ff004f;
 }
 
 #navbar>h1{
@@ -70,6 +70,10 @@ nav>ul>li:hover::after{
     width: 722px;
 }
 
+#main-photo img{
+    width: 100%;
+}
+
 #main-page{
     display: flex;
     align-items: center;
@@ -91,16 +95,16 @@ nav>ul>li:hover::after{
     border: none;
     border-radius: 6px;
     color: white;
-    background: red;
+    background: #ff004f;
     cursor: pointer;
 }
 
 .Contact-Me{
     padding: 0.75em;
     font-size: 1.5rem;
-    border: 2px solid red;
+    border: 2px solid #ff004f;
     border-radius: 6px;
-    color: red;
+    color: #ff004f;
     background: black;
     cursor: pointer;
     margin-left: 1em;
@@ -248,7 +252,7 @@ textarea{
     flex-basis: 35%;
 }
 .contact-right{
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .contact-left p{
@@ -256,7 +260,7 @@ textarea{
 }
 
 .contact-left i{
-    color: red;
+    color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -274,7 +278,7 @@ textarea{
 }
 
 .social-icons i:hover{
-    color: red;
+    color: #ff004f;
     transform: translateY(-5px);
 }
 
@@ -286,7 +290,7 @@ textarea{
     width: 200px;
 }
 #CV:hover,#form-submit:hover{
-    background: red;
+    background: #ff004f;
     color: white;
     border: none;
 }
@@ -317,5 +321,69 @@ form input, form textarea{
 
 .footer a{
     text-decoration: none;
-    color: red;
+    color: #ff004f;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #main-photo{
+        position: absolute;
+        top: 100px;
+        left: -15%;
+        z-index: -1;
+        width: 523px;
+        overflow: hidden;
+    }
+    .main-page-title{
+        margin-left: 2em;
+    }
+    .Contact-Me{
+        margin: 1em 0;
+    }
+    .project-cards{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .main-page-title{
+        margin-top: 60%;
+        font-size: 16px;
+    }
+    #title{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav>.fa-solid{
+        position: absolute;
+        right: 10%;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 90px;
+        display: block;
+        margin: 0;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        margin: 20px;
+    }
+    nav ul i{
+        position: absolute;
+        top:25px;
+        left:25px;
+    }
+    #about, #projects, #navbar {
+        padding: 0 1em;
+    }
 }
